@@ -1,0 +1,26 @@
+<form method="GET" action="/dinosaurs">
+	<label for="nameFilter">Filter By Name</label>
+	<input id="nameFilter" type="text" name="nameFilter">
+	<input type="submit">
+</form>
+
+
+<ul>
+	<% myDinos.forEach(function(dino) { %>
+		<li><%= dino.name%> is a <%= dino.type%></li>
+	<% }) %>
+</ul>
+
+
+<form method="GET" action="/prehistoric_creatures">
+	<label for="pcNameFilter">Filter By Name</label>
+	<input id="pcNameFilter" type="text" name="pcNameFilter">
+	<input type="submit">
+</form>
+
+
+<ul>
+	<% myCreatures.forEach(function(creature) { %>
+		<li><%= creature.name%> is a <%= creature.type%></li>
+	<% }) %>
+</ul>
